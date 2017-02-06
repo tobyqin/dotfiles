@@ -4,24 +4,22 @@
 [alias]
 	lg = log --color --graph --pretty=format:'%Cred%h%Creset -%C(bold magenta)%d%Creset %s %Cgreen(%cr)%C(bold cyan)<%an>%Creset' --abbrev-commit
 	l = log --pretty=format:"%C(yellow)%h\\ %ad%Cred%d\\ %Creset%s%C(cyan)\\ [%cn]" --decorate --date=short -20
-	
-    ci = commit --verbose
-    ca = commit -a --verbose
-    cm = commit -m    
-    m = commit --amend --verbose
-	
+	ci = commit --verbose
+	ca = commit -a --verbose
+	cm = commit -m
+	m = commit --amend --verbose
 	c = commit --verbose    
-    cam = commit -a -m    
+	cam = commit -a -m
 	ac = !git add . && git commit -am
 
-    d = diff
-    ds = diff --stat
-    dc = diff --cached
+	d = diff
+	ds = diff --stat
+	dc = diff --cached
 
-    s = status -s
+	s = status -s
 	st = status
-    co = checkout
-    cob = checkout -b
+	co = checkout
+	cob = checkout -b
 	br = branch
 	bra = branch -a
 	aa = add -A .
@@ -40,7 +38,7 @@
 	sbc = submodule foreach git co master
 	
 	hide = update-index --assume-unchanged
-    unhide = update-index --no-assume-unchanged
+	unhide = update-index --no-assume-unchanged
 
 [push]
 	default = simple
