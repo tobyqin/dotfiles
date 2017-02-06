@@ -19,9 +19,3 @@ export HOMEBREW_BOTTLE_DOMAIN=http://7xkcej.dl1.z0.glb.clouddn.com
 #export HOMEBREW_BOTTLE_DOMAIN="http://homebrew-mirror-china.tycdn.net"
 
 eval "$(pyenv init -)"
-
-function _update_ps1() {
-	export PS1="$(~/.powerline-shell.py $? 2> /dev/null)"
-}
-
-export PROMPT_COMMAND="_update_ps1; $PROMPT_COMMAND"
