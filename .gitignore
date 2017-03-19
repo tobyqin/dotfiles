@@ -6,6 +6,12 @@ Desktop.ini
 ._*
 Thumbs.db
 
+# sqlite db
+*.db
+*.db3
+*.sqlite
+*.sqlite3
+
 # Files that might appear on external disks
 .Spotlight-V100
 .Trashes
@@ -20,6 +26,5 @@ Thumbs.db
 venv
 node_modules
 .sass-cache
-
 .idea/
 .ssh/
