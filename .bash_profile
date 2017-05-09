@@ -5,12 +5,10 @@
 alias hidden-files-show="defaults write com.apple.finder AppleShowAllFiles YES; killall Finder";
 alias hidden-files-hide="defaults write com.apple.finder AppleShowAllFiles NO; killall Finder";
 #
-# FoTiaoQiang iTerm & Terminal Setup Script
-# version 0.1
-#
-function huahua {
-  export http_proxy='http://thenorth.f.ftq.me:27389'
-  export https_proxy='http://thenorth.f.ftq.me:27389'
+
+function ss {
+  export http_proxy=http://127.0.0.1:1087
+  export https_proxy=http://127.0.0.1:1087
 }
 
 export PATH=~/bin:$PATH:/usr/local/bin
