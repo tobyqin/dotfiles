@@ -1,0 +1,5 @@
+default_context:
+    full_name: "Toby Qin"
+    email: "toby.qin@live.com"
+    github_username: "tobyqin"
+cookiecutters_dir: "~/.cookiecutters/"
