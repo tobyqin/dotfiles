@@ -7,7 +7,7 @@ export ZSH=/Users/tobyqin/.oh-my-zsh
 # Set name of the theme to load. Optionally, if you set this to "random"
 # it'll load a random theme each time that oh-my-zsh is loaded.
 # See https://github.com/robbyrussell/oh-my-zsh/wiki/Themes
-ZSH_THEME="fishy"
+ZSH_THEME="ys"
 
 # Uncomment the following line to use case-sensitive completion.
 # CASE_SENSITIVE="true"
@@ -61,6 +61,8 @@ source $ZSH/oh-my-zsh.sh
 
 # You may need to manually set your language environment
 # export LANG=en_US.UTF-8
+export LC_ALL=en_US.UTF-8  
+export LANG=en_US.UTF-8
 
 # Preferred editor for local and remote sessions
 # if [[ -n $SSH_CONNECTION ]]; then
@@ -88,3 +90,7 @@ source ~/.bash_profile
 
 # added by travis gem
 [ -f /Users/tobyqin/.travis/travis.sh ] && source /Users/tobyqin/.travis/travis.sh
+export PATH="/usr/local/sbin:$PATH"
+alias kvm="ssh root@161.129.45.224 -p 30277"
+
+eval $(thefuck --alias)
