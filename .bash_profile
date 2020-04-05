@@ -6,7 +6,7 @@ alias hidden-files-show="defaults write com.apple.finder AppleShowAllFiles YES; 
 alias hidden-files-hide="defaults write com.apple.finder AppleShowAllFiles NO; killall Finder"
 
 #alias start-jenkins="sudo launchctl load /Library/LaunchDaemons/org.jenkins-ci.plist";
-# alias stop-jenkins="sudo launchctl unload /Library/LaunchDaemons/org.jenkins-ci.plist";
+#alias stop-jenkins="sudo launchctl unload /Library/LaunchDaemons/org.jenkins-ci.plist";
 
 function ss-on() {
   export http_proxy=http://127.0.0.1:8003
@@ -55,9 +55,5 @@ export YO_DEBUG=true
 export LANG=en_US.UTF-8
 export LC_ALL=en_US.UTF-8
 
-source ~/.jgrc &>/dev/null
-source ~/.bashrc &>/dev/null
-
 eval "$(pyenv init -)"
-
 alias gg="git aa;git cm 'update';git push"

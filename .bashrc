@@ -1,3 +1,5 @@
+source ~/.bash_profile &>/dev/null
+source ~/.jgrc &>/dev/null
 
 ls --color=auto &>/dev/null && alias ls='ls --color=auto' && eval "$(dircolors)"
 
@@ -45,7 +47,8 @@ alias mkdir='mkdir -pv'
 alias which='which -a'
 alias path='echo -e ${PATH//:/\\n}'
 alias ping='ping -c 5'
-alias ports='netstat -tulanp'
+alias ports='sudo lsof -PiTCP -sTCP:LISTEN'
+alias nports='netstat -tulanp'
 alias rm='rm -I --preserve-root'
 alias chown='chown -v --preserve-root'
 alias chmod='chmod -v --preserve-root'
