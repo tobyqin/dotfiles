@@ -51,5 +51,7 @@
 	process = git-lfs filter-process
 	required = true
 	clean = git-lfs clean -- %f
-[http]
-	proxy = http://127.0.0.1:8001
+#[http]
+#	proxy = http://127.0.0.1:8003
+#[https]
+#	proxy = http://127.0.0.1:8003

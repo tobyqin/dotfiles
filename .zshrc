@@ -51,7 +51,7 @@ ZSH_THEME="ys"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git pip python autojump)
+plugins=(git pip python autojump zsh-autosuggestions)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -61,7 +61,7 @@ source $ZSH/oh-my-zsh.sh
 
 # You may need to manually set your language environment
 # export LANG=en_US.UTF-8
-export LC_ALL=en_US.UTF-8  
+export LC_ALL=en_US.UTF-8
 export LANG=en_US.UTF-8
 
 # Preferred editor for local and remote sessions
@@ -86,11 +86,18 @@ export LANG=en_US.UTF-8
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
-source ~/.bash_profile
+source ~/.bashrc &>/dev/null
+source ~/.bash_profile  &>/dev/null
+
+export PATH="/usr/local/sbin:$PATH"
+
+alias s=systemctl
+alias k=kubectl
+alias n=nginx
+alias vi=vim
 
 # added by travis gem
 [ -f /Users/tobyqin/.travis/travis.sh ] && source /Users/tobyqin/.travis/travis.sh
-export PATH="/usr/local/sbin:$PATH"
-alias kvm="ssh root@161.129.45.224 -p 30277"
 
 eval $(thefuck --alias)
+if [ /usr/local/bin/kubectl ]; then source <(kubectl completion zsh); fi
