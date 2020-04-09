@@ -8,13 +8,13 @@ alias hidden-files-hide="defaults write com.apple.finder AppleShowAllFiles NO; k
 #alias start-jenkins="sudo launchctl load /Library/LaunchDaemons/org.jenkins-ci.plist";
 #alias stop-jenkins="sudo launchctl unload /Library/LaunchDaemons/org.jenkins-ci.plist";
 
-function ss-on() {
+function sson() {
   export http_proxy=http://127.0.0.1:8003
   export https_proxy=http://127.0.0.1:8003
   export ALL_PROXY=http://127.0.0.1:8003
 }
 
-function ss-off() {
+function ssoff() {
   unset http_proxy
   unset https_proxy
   unset ALL_PROXY
