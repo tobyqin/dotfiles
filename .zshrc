@@ -90,6 +90,8 @@ source ~/.bash_profile &>/dev/null
 source ~/.profile &>/dev/null
 
 alias c=clear
+alias cls=clear
+alias g=git
 alias h=history
 alias s=systemctl
 alias k=kubectl
@@ -100,4 +102,4 @@ alias vi=vim
 [ -f /Users/tobyqin/.travis/travis.sh ] && source /Users/tobyqin/.travis/travis.sh
 
 eval $(thefuck --alias)
-if [ /usr/local/bin/kubectl ]; then source <(kubectl completion zsh); fi
+[ -f /usr/local/bin/kubectl ] && source <(kubectl completion zsh)

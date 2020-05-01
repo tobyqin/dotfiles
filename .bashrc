@@ -57,11 +57,11 @@ alias chgrp='chgrp --preserve-root'
 alias virc='vi ~/.vimrc'
 alias barc='vi ~/.bashrc && source ~/.bashrc'
 alias baprofile='vi ~/.bash_profile && source ~/.bash_profile'
-alias bareload='source ~/.bash_profile &>/dev/null || source ~/.bashrc  &>/dev/null'
+alias bareload='source ~/.bash_profile &>/dev/null;source ~/.bashrc  &>/dev/null'
 alias zshrc='vi ~/.zshrc && source ~/.zshrc'
 
 alias untar='tar -zxvf'
-alias www='/usr/bin/python2 -m SimpleHTTPServer 8000'
+alias www='/usr/bin/python2 -m SimpleHTTPServer 4000'
 
 alias ng='nginx'
 alias ngreload='sudo ng -s reload'
