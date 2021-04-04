@@ -101,5 +101,8 @@ alias vi=vim
 # added by travis gem
 [ -f /Users/tobyqin/.travis/travis.sh ] && source /Users/tobyqin/.travis/travis.sh
 
-eval $(thefuck --alias)
+# eval $(thefuck --alias)
+
 [ -f /usr/local/bin/kubectl ] && source <(kubectl completion zsh)
+
+export PATH="/usr/local/sbin:$PATH"
