@@ -40,7 +40,7 @@ export HOMEBREW_NO_AUTO_UPDATE=1
 #export HOMEBREW_BOTTLE_DOMAIN="http://homebrew-mirror-china.tycdn.net";
 
 export GOPATH=~/Go
-export PATH=$PATH:$GOROOT/bin:$GOPATH/bin
+export PATH=$PATH:$GOPATH/bin
 export GROOVY_HOME=/usr/local/opt/groovy/libexec
 
 # yo development
