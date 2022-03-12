@@ -21,9 +21,10 @@ function ssoff() {
 }
 
 export ANDROID_HOME=~/Library/Android/sdk/
-export JAVA_HOME=/Library/Java/JavaVirtualMachines/jdk1.8.0_112.jdk/Contents/Home
+export JAVA_HOME=/Library/Java/JavaVirtualMachines/temurin-17.jdk/Contents/Home
 #export JAVA_HOME=/Library/Java/JavaVirtualMachines/openjdk-12.0.1.jdk/Contents/Home;
 
+alias java17="export JAVA_HOME=$(/usr/libexec/java_home -v 17); java -version"
 alias java12="export JAVA_HOME=$(/usr/libexec/java_home -v 12); java -version"
 alias java11="export JAVA_HOME=$(/usr/libexec/java_home -v 11); java -version"
 # alias java10="export JAVA_HOME=`/usr/libexec/java_home -v 10`; java -version"
