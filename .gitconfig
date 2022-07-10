@@ -56,3 +56,5 @@
 #	proxy = http://127.0.0.1:8003
 #[https]
 #	proxy = http://127.0.0.1:8003
+[safe]
+	directory = /usr/local/Homebrew
