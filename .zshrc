@@ -111,3 +111,5 @@ alias vi=vim
 # eval $(thefuck --alias)
 
 export PATH="/usr/local/sbin:$PATH"
+
+[ -f /Users/toby/Library/Python/3.9/bin ] && export PATH="/Users/toby/Library/Python/3.9/bin:$PATH"
