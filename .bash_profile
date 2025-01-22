@@ -58,3 +58,4 @@ export LC_ALL=en_US.UTF-8
 
 #eval "$(pyenv init -)"
 # alias gg="git aa;git cm 'update';git push"
+. "$HOME/.cargo/env"

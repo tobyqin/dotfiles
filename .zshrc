@@ -110,6 +110,12 @@ alias vi=vim
 
 # eval $(thefuck --alias)
 
-export PATH="/usr/local/sbin:$PATH"
+export PATH="/usr/local/sbin:/opt/homebrew/bin:$PATH"
 
 [ -f /Users/toby/Library/Python/3.9/bin ] && export PATH="/Users/toby/Library/Python/3.9/bin:$PATH"
+
+export SCRCPY_SERVER_PATH=/Applications/极空间.app/Contents/Resources/app.asar.unpacked/bin/platform-tools/scrcpy-server
+export PATH=$PATH:/Applications/极空间.app/Contents/Resources/app.asar.unpacked/bin/platform-tools
+
+# Load Angular CLI autocompletion.
+source <(ng completion script)
