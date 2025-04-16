@@ -61,3 +61,7 @@
 	directory = /usr/local/Homebrew
 [pull]
 	rebase = false
+[http]
+	proxy = http://127.0.0.1:1087
+[https]
+	proxy = http://127.0.0.1:1087

@@ -69,4 +69,6 @@ alias ngtest='sudo ngx -t'
 alias ngconf='sudo vi /etc/nginx/nginx.conf && ngtest'
 
 alias help='tldr'
-. "$HOME/.cargo/env"
+
+source "$HOME/.cargo/env" &>/dev/null
+source "$HOME/.local/bin/env" &>/dev/null
